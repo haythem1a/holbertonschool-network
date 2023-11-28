@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# task 5
+
+if [ -z "$1" ]; then
+  echo "Usage: 6-is_the_host_on_the_network {IP_ADDRESS}"
+  exit 1
+fi
+
+ip_address=$1
+
+ping -c 5 "$ip_address"
